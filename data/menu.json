@@ -1,0 +1,123 @@
+{
+  "updated": "2024-05-01",
+  "categories": [
+    {
+      "id": "starters",
+      "title": "Starters & Tapas",
+      "description": "Small plates to awaken the senses.",
+      "items": [
+        {
+          "name": "Citrus-marinated Gordal olives",
+          "price": 7,
+          "description": "Orange zest, thyme, smoked almonds, arbequina olive oil.",
+          "image": "assets/images/menu-item.svg",
+          "allergens": ["nuts"],
+          "dietary": ["vegan"]
+        },
+        {
+          "name": "Charred Galician octopus",
+          "price": 14,
+          "description": "Romesco, confit potatoes, smoked paprika, micro basil.",
+          "image": "assets/images/menu-item.svg",
+          "allergens": ["seafood", "nuts"],
+          "spicy": true
+        },
+        {
+          "name": "Burrata de la huerta",
+          "price": 12,
+          "description": "Heirloom tomatoes, basil oil, aged balsamic, toasted focaccia.",
+          "image": "assets/images/menu-item.svg",
+          "allergens": ["dairy", "gluten"]
+        }
+      ]
+    },
+    {
+      "id": "mains",
+      "title": "Signature Mains",
+      "description": "Hearty plates from the grill and the sea.",
+      "items": [
+        {
+          "name": "Wood-fired sea bass",
+          "price": 22,
+          "description": "Salsa verde, fennel confit, charred lemon, crispy capers.",
+          "image": "assets/images/menu-item.svg",
+          "allergens": ["seafood"],
+          "dietary": ["gluten-free"]
+        },
+        {
+          "name": "Seaside saffron paella",
+          "price": 24,
+          "description": "Bomba rice, prawns, mussels, squid, saffron broth, smoked aioli.",
+          "image": "assets/images/menu-item.svg",
+          "allergens": ["seafood", "nuts"],
+          "spicy": true
+        },
+        {
+          "name": "Dry-aged ribeye for two",
+          "price": 48,
+          "description": "Roasted garlic butter, patatas bravas, charred scallions.",
+          "image": "assets/images/menu-item.svg",
+          "allergens": ["dairy"],
+          "dietary": ["contains-meat"],
+          "spicy": true
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "title": "Desserts",
+      "description": "Handcrafted sweets to finish the evening.",
+      "items": [
+        {
+          "name": "Valrhona chocolate tart",
+          "price": 9,
+          "description": "Sea salt caramel, raspberry coulis, cocoa nib crunch.",
+          "image": "assets/images/menu-item.svg",
+          "allergens": ["dairy", "gluten"]
+        },
+        {
+          "name": "Classic crema catalana",
+          "price": 8,
+          "description": "Citrus zest custard, brûléed sugar, almond crumble.",
+          "image": "assets/images/menu-item.svg",
+          "allergens": ["nuts", "dairy"]
+        },
+        {
+          "name": "Basque cheesecake",
+          "price": 8,
+          "description": "Orange blossom honey, macerated berries, pistachio dust.",
+          "image": "assets/images/menu-item.svg",
+          "allergens": ["dairy", "nuts"]
+        }
+      ]
+    },
+    {
+      "id": "drinks",
+      "title": "Drinks & Pairings",
+      "description": "Curated wines, cocktails, and zero-proof sips.",
+      "items": [
+        {
+          "name": "Sommelier wine flight",
+          "price": 16,
+          "description": "Three seasonal pours highlighting Catalan vineyards.",
+          "image": "assets/images/menu-item.svg",
+          "containsAlcohol": true
+        },
+        {
+          "name": "Smoked rosemary gin tonic",
+          "price": 12,
+          "description": "Nordés gin, grapefruit tonic, charred rosemary, pink peppercorn.",
+          "image": "assets/images/menu-item.svg",
+          "containsAlcohol": true
+        },
+        {
+          "name": "Garden tonic zero-proof",
+          "price": 9,
+          "description": "Juniper cordial, cucumber, elderflower, Mediterranean tonic.",
+          "image": "assets/images/menu-item.svg",
+          "dietary": ["alcohol-free"]
+        }
+      ]
+    }
+  ]
+}

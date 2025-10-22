@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Casa Sabor hero illustration</title>
+  <desc id="desc">Stylized pan of paella representing Casa Sabor's signature dish.</desc>
+  <rect width="800" height="600" fill="#1f2933" />
+  <circle cx="400" cy="300" r="220" fill="#f6ad55" />
+  <circle cx="400" cy="300" r="180" fill="#fbd38d" />
+  <g fill="#2f855a">
+    <circle cx="520" cy="240" r="24" />
+    <circle cx="320" cy="380" r="18" />
+    <circle cx="420" cy="420" r="16" />
+    <circle cx="260" cy="260" r="20" />
+  </g>
+  <g fill="#c53030">
+    <circle cx="470" cy="320" r="18" />
+    <circle cx="360" cy="230" r="14" />
+    <circle cx="300" cy="320" r="12" />
+    <circle cx="500" cy="380" r="16" />
+  </g>
+  <text x="400" y="560" font-family="'Playfair Display', serif" font-size="48" text-anchor="middle" fill="#f7fafc">
+    Casa Sabor
+  </text>
+</svg>
