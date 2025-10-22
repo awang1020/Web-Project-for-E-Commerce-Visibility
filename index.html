@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visibility Boost - E-Commerce Growth Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <script src="assets/js/app.js" type="module" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="top-nav">
+        <div class="logo">
+          <span class="logo-mark">VB</span>
+          <span class="logo-text">Visibility Boost</span>
+        </div>
+        <div class="nav-actions">
+          <a href="#profile" class="ghost-btn">Business Profiles</a>
+          <a href="#analytics" class="ghost-btn">Analytics</a>
+          <a href="#branding" class="primary-btn">Launch AI Studio</a>
+        </div>
+      </nav>
+      <div class="hero-content">
+        <h1>Grow your local business with confidence</h1>
+        <p>
+          Visibility Boost gives restaurants, boutiques, salons, and specialty shops
+          the digital tools they need to stand out online, track engagement, and turn
+          browsers into loyal customers.
+        </p>
+        <div class="hero-cta">
+          <a href="#onboarding" class="primary-btn">Start onboarding</a>
+          <a href="#seo" class="ghost-btn">See growth playbook</a>
+        </div>
+        <dl class="metrics">
+          <div>
+            <dt>15K+</dt>
+            <dd>monthly campaign suggestions delivered</dd>
+          </div>
+          <div>
+            <dt>28%</dt>
+            <dd>average increase in local search impressions</dd>
+          </div>
+          <div>
+            <dt>9.2/10</dt>
+            <dd>customer satisfaction rating</dd>
+          </div>
+        </dl>
+      </div>
+    </header>
+
+    <main>
+      <section id="onboarding" class="card onboarding">
+        <div class="card-header">
+          <h2>Quick onboarding checklist</h2>
+          <p>Follow the guided steps to launch a polished digital presence in minutes.</p>
+        </div>
+        <ol class="checklist" id="checklist"></ol>
+      </section>
+
+      <section id="profile" class="card profile">
+        <div class="card-header">
+          <h2>Business profile manager</h2>
+          <p>
+            Centralize everything about your storefront—photos, menu highlights, hours,
+            promotions, and social links—in one place.
+          </p>
+        </div>
+        <div class="profile-grid">
+          <div class="profile-form">
+            <h3>Add or update a business</h3>
+            <form id="business-form">
+              <label>
+                Business name
+                <input type="text" name="name" required />
+              </label>
+              <label>
+                Category
+                <input type="text" name="category" placeholder="e.g., Bakery, Barber" />
+              </label>
+              <label>
+                City / neighborhood
+                <input type="text" name="location" />
+              </label>
+              <label>
+                Primary offer
+                <input type="text" name="offer" placeholder="Signature product or service" />
+              </label>
+              <label>
+                Brand tone of voice
+                <select name="voice">
+                  <option value="Warm & friendly">Warm & friendly</option>
+                  <option value="Bold & energetic">Bold & energetic</option>
+                  <option value="Premium & elegant">Premium & elegant</option>
+                  <option value="Playful & quirky">Playful & quirky</option>
+                </select>
+              </label>
+              <label>
+                Website or booking link
+                <input type="url" name="website" placeholder="https://" />
+              </label>
+              <label>
+                Social handle
+                <input type="text" name="social" placeholder="@yourbrand" />
+              </label>
+              <label>
+                Upload gallery
+                <input type="url" name="image" placeholder="Image URL" />
+              </label>
+              <button type="submit" class="primary-btn">Save business</button>
+            </form>
+          </div>
+          <div class="profile-list">
+            <div class="list-header">
+              <h3>Active businesses</h3>
+              <button id="sync-google" class="ghost-btn">Sync Google Business Profile</button>
+            </div>
+            <ul id="business-list" class="business-list"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="seo" class="card seo">
+        <div class="card-header">
+          <h2>SEO & local visibility cockpit</h2>
+          <p>
+            Stay on top of search rankings, review health, and structured data best practices.
+          </p>
+        </div>
+        <div class="seo-content">
+          <div class="seo-panel">
+            <h3>Keyword spotlight</h3>
+            <table id="keyword-table">
+              <thead>
+                <tr>
+                  <th>Keyword</th>
+                  <th>Volume</th>
+                  <th>Competition</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <div class="seo-panel">
+            <h3>Visibility insights</h3>
+            <ul id="visibility-insights" class="insights"></ul>
+          </div>
+          <div class="seo-panel">
+            <h3>Structured data readiness</h3>
+            <div class="schema-box">
+              <pre id="schema-preview"></pre>
+              <button id="copy-schema" class="ghost-btn">Copy JSON-LD</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="analytics" class="card analytics">
+        <div class="card-header">
+          <h2>Performance analytics</h2>
+          <p>Monitor web visits, engagement, conversion funnels, and reputation in real-time.</p>
+        </div>
+        <div class="analytics-grid">
+          <div class="chart-card">
+            <div class="chart-header">
+              <h3>Visitor traffic</h3>
+              <span class="badge positive">+18% vs last month</span>
+            </div>
+            <canvas id="traffic-chart" width="400" height="220"></canvas>
+          </div>
+          <div class="chart-card">
+            <div class="chart-header">
+              <h3>Conversion touchpoints</h3>
+              <span class="badge neutral">Stable</span>
+            </div>
+            <canvas id="conversion-chart" width="400" height="220"></canvas>
+          </div>
+          <div class="chart-card">
+            <div class="chart-header">
+              <h3>Review health</h3>
+              <span class="badge positive">4.7 avg rating</span>
+            </div>
+            <ul id="review-list" class="insights"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="branding" class="card branding">
+        <div class="card-header">
+          <h2>AI branding studio</h2>
+          <p>
+            Craft compelling messaging, campaign ideas, and visuals powered by our AI assistant.
+          </p>
+        </div>
+        <div class="branding-grid">
+          <form id="branding-form" class="branding-form">
+            <label>
+              Select business
+              <select name="business" id="branding-business"></select>
+            </label>
+            <label>
+              Campaign goal
+              <select name="goal">
+                <option value="awareness">Increase local awareness</option>
+                <option value="launch">Launch a seasonal special</option>
+                <option value="loyalty">Reward loyal customers</option>
+                <option value="reviews">Generate more 5-star reviews</option>
+              </select>
+            </label>
+            <label>
+              Content type
+              <select name="contentType">
+                <option value="instagram">Instagram carousel</option>
+                <option value="newsletter">Email newsletter snippet</option>
+                <option value="slogan">Brand slogan</option>
+                <option value="product">Product description</option>
+              </select>
+            </label>
+            <label>
+              Tone booster
+              <select name="tone">
+                <option value="friendly">Friendly & welcoming</option>
+                <option value="exciting">Exciting & high-energy</option>
+                <option value="luxury">Elegant & refined</option>
+                <option value="playful">Playful & witty</option>
+              </select>
+            </label>
+            <label>
+              Include special offer
+              <input type="text" name="offer" placeholder="e.g., 15% off brunch combo" />
+            </label>
+            <button type="submit" class="primary-btn">Generate campaign</button>
+          </form>
+          <div class="branding-results">
+            <div class="result-header">
+              <h3>Generated concepts</h3>
+              <button id="copy-ideas" class="ghost-btn">Copy ideas</button>
+            </div>
+            <div id="idea-output" class="idea-output" aria-live="polite"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="showcase" class="card showcase">
+        <div class="card-header">
+          <h2>Business showcase pages</h2>
+          <p>Each profile is instantly transformed into a modern mini-site—shareable in one tap.</p>
+        </div>
+        <div id="showcase-list" class="showcase-grid"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>Visibility Boost</strong>
+        <p>Helping neighborhood businesses become unforgettable online.</p>
+      </div>
+      <div>
+        <h4>Need help?</h4>
+        <p>Email concierge@visibilityboost.app or schedule a kickoff session.</p>
+      </div>
+    </footer>
+  </body>
+</html>
