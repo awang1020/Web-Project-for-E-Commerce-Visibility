@@ -704,3 +704,14 @@ textarea {
     width: 100%;
   }
 }
+
+.include-error {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-md);
+  color: var(--text);
+  padding: 1.5rem;
+  text-align: center;
+  margin: 2rem auto;
+  width: min(480px, 90vw);
+}

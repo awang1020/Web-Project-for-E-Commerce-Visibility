@@ -1,0 +1,22 @@
+{
+  "restaurant": "Casa Sabor",
+  "phone": "+34 933 123 456",
+  "email": "hola@casasabor.example",
+  "whatsapp": "https://wa.me/34933123456",
+  "delivery": {
+    "uberEats": "https://www.ubereats.com/",
+    "glovo": "https://glovoapp.com/",
+    "deliveroo": "https://deliveroo.es/"
+  },
+  "address": {
+    "street": "Carrer del Comerç 25",
+    "city": "Barcelona",
+    "postalCode": "08003",
+    "country": "Spain"
+  },
+  "social": {
+    "instagram": "https://www.instagram.com/casasabor",
+    "facebook": "https://www.facebook.com/casasabor",
+    "googleMaps": "https://g.page/casasabor"
+  }
+}
