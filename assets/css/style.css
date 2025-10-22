@@ -162,17 +162,18 @@ img {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=1800&q=80")
-      center/cover no-repeat;
-  opacity: 0.25;
-  filter: saturate(1.2);
+  background: url("../images/hero-dining.svg") center/cover no-repeat;
+  opacity: 0.35;
 }
+
 
 .hero::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(28, 15, 10, 0.92), rgba(28, 15, 10, 0.85));
+  background: radial-gradient(circle at 15% 20%, rgba(244, 196, 124, 0.24), transparent 55%),
+    radial-gradient(circle at 80% 20%, rgba(19, 56, 64, 0.35), transparent 60%),
+    linear-gradient(180deg, rgba(18, 9, 8, 0.95), rgba(18, 9, 8, 0.78));
 }
 
 .hero-grid {
@@ -263,6 +264,33 @@ img {
   color: var(--muted);
 }
 
+.hero-visual {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.hero-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.hero-gallery figure {
+  background: rgba(0, 0, 0, 0.32);
+  border-radius: var(--radius-md);
+  padding: 0.75rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  display: grid;
+  gap: 0.65rem;
+}
+
+.hero-gallery figcaption {
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
 .hero-metrics {
   margin-top: 2.5rem;
   display: grid;
@@ -305,6 +333,40 @@ img {
 
 .menu-section {
   background: rgba(0, 0, 0, 0.22);
+}
+
+.menu-highlight {
+  margin-top: 3.5rem;
+  background: linear-gradient(135deg, rgba(244, 196, 124, 0.12), rgba(19, 56, 64, 0.15));
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  align-items: center;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.28);
+}
+
+.menu-highlight figure {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.menu-highlight figcaption {
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.menu-highlight-copy {
+  display: grid;
+  gap: 1rem;
+}
+
+.menu-highlight-copy h3 {
+  font-family: "Playfair Display", "Times New Roman", serif;
+  font-size: 1.8rem;
 }
 
 .menu-categories {
@@ -442,6 +504,28 @@ img {
   align-items: start;
 }
 
+.about-copy {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.story-visuals {
+  display: grid;
+  gap: 1.6rem;
+  align-content: start;
+}
+
+.chef-portrait {
+  background: linear-gradient(135deg, rgba(244, 196, 124, 0.14), rgba(212, 122, 44, 0.12));
+  border-radius: var(--radius-lg);
+  padding: 1.2rem;
+  box-shadow: 0 22px 58px rgba(0, 0, 0, 0.28);
+}
+
+.chef-portrait img {
+  border-radius: var(--radius-md);
+}
+
 .story-card,
 .reviews-card,
 .map-card,
@@ -451,6 +535,25 @@ img {
   border-radius: var(--radius-lg);
   padding: 2.2rem;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.contact-visual {
+  background: linear-gradient(135deg, rgba(244, 196, 124, 0.16), rgba(212, 122, 44, 0.1));
+  border-radius: var(--radius-lg);
+  padding: 1.4rem;
+  box-shadow: 0 24px 58px rgba(0, 0, 0, 0.3);
+}
+
+.contact-visual figure {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.contact-visual figcaption {
+  font-size: 0.85rem;
+  color: var(--muted);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
 .story-card h3,
@@ -507,6 +610,22 @@ img {
   margin-right: 0.8rem;
 }
 
+.reviews-stack {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.reviews-visual {
+  background: linear-gradient(135deg, rgba(19, 56, 64, 0.35), rgba(244, 196, 124, 0.12));
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  box-shadow: 0 22px 58px rgba(0, 0, 0, 0.28);
+}
+
+.reviews-visual img {
+  border-radius: var(--radius-md);
+}
+
 .reviews-card ul {
   list-style: none;
   display: grid;
@@ -518,6 +637,25 @@ img {
   font-weight: 600;
   color: var(--accent);
   margin: 1rem 0;
+}
+
+.visit-visual {
+  background: linear-gradient(135deg, rgba(19, 56, 64, 0.18), rgba(244, 196, 124, 0.12));
+  border-radius: var(--radius-lg);
+  padding: 1.4rem;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.3);
+}
+
+.visit-visual figure {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.visit-visual figcaption {
+  font-size: 0.85rem;
+  color: var(--muted);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
 }
 
 .hours dl {
@@ -673,6 +811,14 @@ textarea {
   .nav-toggle[aria-expanded="true"] span:nth-child(3) {
     transform: translateY(-6px) rotate(-45deg);
   }
+
+  .hero-gallery {
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+  }
+
+  .menu-highlight {
+    padding: 2rem;
+  }
 }
 
 @media (max-width: 640px) {
@@ -690,6 +836,24 @@ textarea {
 
   .hero-card {
     padding: 1.25rem;
+  }
+
+  .hero-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-highlight {
+    padding: 1.75rem;
+  }
+
+  .reviews-stack {
+    gap: 1rem;
+  }
+
+  .visit-visual,
+  .contact-visual,
+  .chef-portrait {
+    padding: 1rem;
   }
 
   .menu-grid {
