@@ -83,6 +83,85 @@ const initInteractions = () => {
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
+
+  const heroGallery = document.querySelector(".hero-gallery");
+  if (heroGallery) {
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    );
+
+    const items = Array.from(heroGallery.children);
+    items.forEach((item) => {
+      const clone = item.cloneNode(true);
+      clone.setAttribute("aria-hidden", "true");
+      heroGallery.appendChild(clone);
+    });
+
+    const scrollStep = 0.35;
+    let animationFrameId = null;
+    let isPaused = false;
+
+    const resetIfNeeded = () => {
+      const maxScroll = heroGallery.scrollWidth / 2;
+      if (heroGallery.scrollLeft >= maxScroll) {
+        heroGallery.scrollLeft = 0;
+      }
+    };
+
+    const step = () => {
+      if (!isPaused) {
+        heroGallery.scrollLeft += scrollStep;
+        resetIfNeeded();
+      }
+      animationFrameId = requestAnimationFrame(step);
+    };
+
+    const stop = () => {
+      if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
+        animationFrameId = null;
+      }
+    };
+
+    const pause = () => {
+      isPaused = true;
+    };
+
+    const resume = () => {
+      if (!prefersReducedMotion.matches) {
+        isPaused = false;
+        if (!animationFrameId) {
+          step();
+        }
+      }
+    };
+
+    heroGallery.addEventListener("pointerenter", pause);
+    heroGallery.addEventListener("pointerleave", resume);
+    heroGallery.addEventListener("focusin", pause);
+    heroGallery.addEventListener("focusout", resume);
+    heroGallery.addEventListener("touchstart", pause, { passive: true });
+    heroGallery.addEventListener("touchend", resume);
+    heroGallery.addEventListener("touchcancel", resume);
+
+    if (!prefersReducedMotion.matches) {
+      step();
+    } else {
+      isPaused = true;
+    }
+
+    prefersReducedMotion.addEventListener("change", (event) => {
+      if (event.matches) {
+        isPaused = true;
+        stop();
+      } else {
+        isPaused = false;
+        if (!animationFrameId) {
+          step();
+        }
+      }
+    });
+  }
 };
 
 document.addEventListener("DOMContentLoaded", async () => {
