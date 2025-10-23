@@ -1,62 +1,101 @@
 <svg width="360" height="360" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="background" x1="60" y1="60" x2="300" y2="300" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#1B0E23" />
-      <stop offset="1" stop-color="#050308" />
+    <linearGradient id="collageBg" x1="60" y1="60" x2="300" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1A0D22" />
+      <stop offset="1" stop-color="#080309" />
     </linearGradient>
-    <linearGradient id="card1" x1="64" y1="84" x2="176" y2="216" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFEEDA" />
-      <stop offset="1" stop-color="#FFD2A1" />
-    </linearGradient>
-    <linearGradient id="card2" x1="184" y1="64" x2="312" y2="196" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFF7FC" />
-      <stop offset="1" stop-color="#FBD2E9" />
-    </linearGradient>
-    <linearGradient id="card3" x1="120" y1="200" x2="280" y2="320" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#E7FFF4" />
-      <stop offset="1" stop-color="#B5F4D7" />
-    </linearGradient>
-    <linearGradient id="dish1" x1="84" y1="120" x2="160" y2="208" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F97F60" />
-      <stop offset="1" stop-color="#D63B23" />
-    </linearGradient>
-    <linearGradient id="dish2" x1="212" y1="116" x2="276" y2="184" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFDC7C" />
-      <stop offset="1" stop-color="#FFA41A" />
-    </linearGradient>
-    <linearGradient id="dish3" x1="168" y1="244" x2="260" y2="312" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#6FD48C" />
-      <stop offset="1" stop-color="#2E9B5E" />
-    </linearGradient>
-    <filter id="cardShadow" x="36" y="44" width="288" height="292" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feOffset dy="14" />
-      <feGaussianBlur stdDeviation="18" />
-      <feColorMatrix type="matrix" values="0 0 0 0 0.08 0 0 0 0 0.05 0 0 0 0 0.18 0 0 0 0.25 0" />
-      <feBlend in="SourceGraphic" result="shape" />
+    <filter id="collageShadow" x="32" y="36" width="296" height="300" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="18" result="blur" />
+      <feOffset dy="18" in="blur" result="offset" />
+      <feColorMatrix in="offset" type="matrix" values="0 0 0 0 0.07 0 0 0 0 0.05 0 0 0 0 0.16 0 0 0 0.3 0" />
     </filter>
+    <radialGradient id="plateWarm" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(128 152) scale(62)">
+      <stop offset="0" stop-color="#FFF3DD" />
+      <stop offset="0.6" stop-color="#F1D7A0" />
+      <stop offset="1" stop-color="#D19A52" />
+    </radialGradient>
+    <radialGradient id="plateCool" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(252 138) scale(58)">
+      <stop offset="0" stop-color="#F9F5FF" />
+      <stop offset="0.6" stop-color="#E4C4EF" />
+      <stop offset="1" stop-color="#AA74BE" />
+    </radialGradient>
+    <radialGradient id="plateGreen" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(218 268) scale(70)">
+      <stop offset="0" stop-color="#F3FFF5" />
+      <stop offset="0.5" stop-color="#C4F1D6" />
+      <stop offset="1" stop-color="#63B583" />
+    </radialGradient>
+    <radialGradient id="pasta" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(130 150) rotate(12) scale(44 38)">
+      <stop offset="0" stop-color="#FFE7B8" />
+      <stop offset="0.6" stop-color="#FFBF4C" />
+      <stop offset="1" stop-color="#D17324" />
+    </radialGradient>
+    <radialGradient id="pastaHighlight" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(120 140) rotate(30) scale(28)">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.5" />
+      <stop offset="1" stop-color="#FFCB6C" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="dessert" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(254 140) rotate(18) scale(40 38)">
+      <stop offset="0" stop-color="#FFE8F1" />
+      <stop offset="0.6" stop-color="#FFB0D6" />
+      <stop offset="1" stop-color="#C44F91" />
+    </radialGradient>
+    <radialGradient id="dessertCenter" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(252 140) scale(18)">
+      <stop offset="0" stop-color="#FFF5F9" />
+      <stop offset="1" stop-color="#F6D5E6" />
+    </radialGradient>
+    <radialGradient id="salad" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(220 270) rotate(12) scale(48 44)">
+      <stop offset="0" stop-color="#CFF6C8" />
+      <stop offset="0.5" stop-color="#7ECF7E" />
+      <stop offset="1" stop-color="#2E7C49" />
+    </radialGradient>
+    <radialGradient id="saladHighlight" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(228 246) rotate(28) scale(26)">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.4" />
+      <stop offset="1" stop-color="#8ED89A" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="cardWarm" x1="68" y1="92" x2="180" y2="224" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFEAD6" />
+      <stop offset="1" stop-color="#F5C48F" />
+    </linearGradient>
+    <linearGradient id="cardSweet" x1="188" y1="72" x2="320" y2="204" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFF5FC" />
+      <stop offset="1" stop-color="#FAD2EB" />
+    </linearGradient>
+    <linearGradient id="cardFresh" x1="128" y1="210" x2="300" y2="324" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E1FFF1" />
+      <stop offset="1" stop-color="#92E3C3" />
+    </linearGradient>
   </defs>
-  <rect width="360" height="360" rx="48" fill="url(#background)" />
-  <g filter="url(#cardShadow)">
-    <rect x="64" y="92" width="132" height="168" rx="24" fill="url(#card1)" />
-    <rect x="188" y="72" width="132" height="168" rx="24" fill="url(#card2)" />
-    <rect x="120" y="208" width="192" height="132" rx="28" fill="url(#card3)" />
-    <circle cx="130" cy="148" r="42" fill="#FFE9D2" />
-    <circle cx="130" cy="148" r="34" fill="url(#dish1)" />
-    <path d="M100 168C110 154 124 150 138 152C156 154 172 168 170 186C166 210 132 212 112 198C104 192 96 184 100 168Z" fill="#FFD3AA" />
-    <circle cx="254" cy="140" r="38" fill="#FFF1F9" />
-    <circle cx="254" cy="140" r="30" fill="url(#dish2)" />
-    <path d="M232 120C248 112 272 118 280 134C286 148 280 166 264 174C240 188 210 168 220 144C224 134 222 126 232 120Z" fill="#FFEDC8" />
-    <circle cx="220" cy="272" r="52" fill="#E6FFF3" />
-    <circle cx="220" cy="272" r="44" fill="url(#dish3)" />
-    <path d="M188 260C180 280 196 306 222 310C254 316 280 288 270 262C262 240 198 234 188 260Z" fill="#F3FFD5" />
-    <path d="M156 236L136 212" stroke="#FF9A6C" stroke-width="10" stroke-linecap="round" />
-    <path d="M312 192L292 172" stroke="#FF9A6C" stroke-width="10" stroke-linecap="round" />
-    <path d="M164 320H276" stroke="#5BBE87" stroke-width="12" stroke-linecap="round" opacity="0.4" />
+  <rect width="360" height="360" rx="48" fill="url(#collageBg)" />
+  <g filter="url(#collageShadow)">
+    <rect x="68" y="96" width="136" height="176" rx="28" fill="url(#cardWarm)" />
+    <rect x="192" y="72" width="128" height="176" rx="28" fill="url(#cardSweet)" />
+    <rect x="128" y="212" width="200" height="132" rx="32" fill="url(#cardFresh)" />
+    <circle cx="128" cy="152" r="58" fill="#FFF6E6" />
+    <circle cx="128" cy="152" r="50" fill="url(#plateWarm)" />
+    <path d="M98 170C110 150 140 142 164 148C184 152 198 166 194 184C188 214 134 218 110 202C100 196 94 188 98 170Z" fill="url(#pasta)" />
+    <path d="M104 142C118 130 138 126 154 132C168 138 176 152 170 164C164 178 140 184 118 178C106 174 98 160 104 142Z" fill="#FFEED0" opacity="0.55" />
+    <circle cx="120" cy="140" r="22" fill="url(#pastaHighlight)" />
+    <path d="M92 198C104 212 124 220 144 218" stroke="#C27838" stroke-width="6" stroke-linecap="round" opacity="0.45" />
+    <circle cx="252" cy="132" r="52" fill="#FFF1FB" />
+    <circle cx="252" cy="132" r="46" fill="url(#plateCool)" />
+    <circle cx="252" cy="132" r="34" fill="url(#dessert)" />
+    <circle cx="252" cy="132" r="18" fill="url(#dessertCenter)" />
+    <path d="M232 120C240 108 260 104 276 112C292 120 298 140 288 154C276 172 236 170 230 150" stroke="#ECA5CE" stroke-width="6" stroke-linecap="round" opacity="0.45" />
+    <path d="M264 96C280 96 296 108 300 124" stroke="#D374B9" stroke-width="6" stroke-linecap="round" opacity="0.45" />
+    <circle cx="220" cy="268" r="62" fill="#E6FFF3" />
+    <circle cx="220" cy="268" r="54" fill="url(#plateGreen)" />
+    <circle cx="220" cy="268" r="44" fill="url(#salad)" />
+    <circle cx="220" cy="268" r="24" fill="#F3FFD6" opacity="0.6" />
+    <path d="M186 258C178 274 190 298 214 304C242 310 270 292 270 266C270 238 202 228 186 258Z" fill="#D0F5C4" opacity="0.7" />
+    <path d="M204 236C214 228 230 228 242 236" stroke="#2D6C41" stroke-width="8" stroke-linecap="round" opacity="0.5" />
+    <circle cx="226" cy="244" r="22" fill="url(#saladHighlight)" />
+    <path d="M160 240L136 212" stroke="#FF8E6C" stroke-width="12" stroke-linecap="round" />
+    <path d="M312 200L288 176" stroke="#FF8E6C" stroke-width="12" stroke-linecap="round" />
+    <path d="M174 324H280" stroke="#65C492" stroke-width="12" stroke-linecap="round" opacity="0.45" />
   </g>
   <g opacity="0.65">
-    <circle cx="84" cy="84" r="12" fill="#FF8C9F" />
-    <circle cx="300" cy="96" r="8" fill="#FFE0F5" />
-    <path d="M72 296C86 276 116 260 152 260" stroke="#FFBEB7" stroke-width="10" stroke-linecap="round" />
-    <path d="M288 72C300 82 308 98 306 114" stroke="#FFE7FB" stroke-width="8" stroke-linecap="round" />
+    <circle cx="86" cy="84" r="12" fill="#FF889D" />
+    <circle cx="300" cy="96" r="10" fill="#FFD9F1" />
+    <path d="M72 296C88 274 118 256 154 256" stroke="#FFB4A7" stroke-width="10" stroke-linecap="round" />
+    <path d="M288 72C300 82 308 98 306 116" stroke="#FFE5FC" stroke-width="8" stroke-linecap="round" />
   </g>
 </svg>

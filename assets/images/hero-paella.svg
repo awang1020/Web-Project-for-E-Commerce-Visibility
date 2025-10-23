@@ -1,53 +1,115 @@
 <svg width="360" height="360" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <radialGradient id="paellaGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 160) scale(200)">
-      <stop offset="0" stop-color="#FFE7B2" />
-      <stop offset="1" stop-color="#FF9F1C" />
+    <radialGradient id="duskGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 136) scale(220)">
+      <stop offset="0" stop-color="#FFE8BE" />
+      <stop offset="0.55" stop-color="#C15A24" stop-opacity="0.6" />
+      <stop offset="1" stop-color="#240C12" />
     </radialGradient>
-    <linearGradient id="pan" x1="64" y1="56" x2="296" y2="320" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#2C2A35" />
-      <stop offset="1" stop-color="#14121A" />
+    <linearGradient id="panBody" x1="80" y1="80" x2="280" y2="312" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4A4E5E" />
+      <stop offset="0.5" stop-color="#232531" />
+      <stop offset="1" stop-color="#11111A" />
     </linearGradient>
-    <linearGradient id="rice" x1="108" y1="132" x2="252" y2="260" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFEDB3" />
-      <stop offset="1" stop-color="#FFBD45" />
+    <radialGradient id="panInner" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 190) scale(124)">
+      <stop offset="0" stop-color="#1B1C26" />
+      <stop offset="1" stop-color="#05050C" />
+    </radialGradient>
+    <radialGradient id="saffronRice" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 190) scale(114)">
+      <stop offset="0" stop-color="#FFEFC0" />
+      <stop offset="0.35" stop-color="#FFD765" />
+      <stop offset="0.75" stop-color="#F69A24" />
+      <stop offset="1" stop-color="#D05C17" />
+    </radialGradient>
+    <radialGradient id="riceHighlight" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(156 168) rotate(22) scale(96 84)">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.5" />
+      <stop offset="1" stop-color="#FFCD52" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="shrimpBody" x1="104" y1="214" x2="232" y2="294" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFC0A8" />
+      <stop offset="0.45" stop-color="#F0774F" />
+      <stop offset="1" stop-color="#A33021" />
     </linearGradient>
-    <linearGradient id="shrimp" x1="96" y1="168" x2="180" y2="252" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FF8A6C" />
-      <stop offset="1" stop-color="#E6453C" />
+    <radialGradient id="shrimpGloss" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(142 242) rotate(14) scale(34)">
+      <stop offset="0" stop-color="#FFE0D4" />
+      <stop offset="1" stop-color="#F07850" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="musselShell" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(248 168) rotate(24) scale(56 58)">
+      <stop offset="0" stop-color="#5E6379" />
+      <stop offset="0.6" stop-color="#202231" />
+      <stop offset="1" stop-color="#080811" />
+    </radialGradient>
+    <radialGradient id="musselInner" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(252 174) scale(28)">
+      <stop offset="0" stop-color="#FFEDC8" />
+      <stop offset="1" stop-color="#E68A2A" />
+    </radialGradient>
+    <radialGradient id="pepper" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(138 146) rotate(16) scale(48 42)">
+      <stop offset="0" stop-color="#FFAD9B" />
+      <stop offset="0.5" stop-color="#FF6D53" />
+      <stop offset="1" stop-color="#AA281F" />
+    </radialGradient>
+    <radialGradient id="lemon" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(232 228) rotate(18) scale(46)">
+      <stop offset="0" stop-color="#FFF6D6" />
+      <stop offset="0.5" stop-color="#FFE37E" />
+      <stop offset="1" stop-color="#E2A21C" />
+    </radialGradient>
+    <linearGradient id="handle" x1="84" y1="86" x2="120" y2="126" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2F303D" />
+      <stop offset="1" stop-color="#141419" />
     </linearGradient>
-    <linearGradient id="mussel" x1="220" y1="132" x2="280" y2="204" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#1A1E3A" />
-      <stop offset="1" stop-color="#060712" />
+    <linearGradient id="handle2" x1="300" y1="82" x2="260" y2="126" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2F303D" />
+      <stop offset="1" stop-color="#141419" />
     </linearGradient>
-    <linearGradient id="peas" x1="150" y1="212" x2="210" y2="280" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#9BF080" />
-      <stop offset="1" stop-color="#3F9C3A" />
-    </linearGradient>
-    <filter id="panShadow" x="28" y="44" width="304" height="292" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feOffset dy="12" />
-      <feGaussianBlur stdDeviation="18" />
-      <feColorMatrix type="matrix" values="0 0 0 0 0.12 0 0 0 0 0.08 0 0 0 0 0.04 0 0 0 0.28 0" />
-      <feBlend in="SourceGraphic" result="shape" />
+    <filter id="panShadow" x="30" y="40" width="300" height="292" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="18" result="blur" />
+      <feOffset dy="18" in="blur" result="offset" />
+      <feColorMatrix in="offset" type="matrix" values="0 0 0 0 0.08 0 0 0 0 0.05 0 0 0 0 0.18 0 0 0 0.35 0" />
     </filter>
+    <pattern id="riceTexture" patternUnits="userSpaceOnUse" width="14" height="14" patternTransform="rotate(18)">
+      <rect width="14" height="14" fill="none" />
+      <ellipse cx="3" cy="4" rx="2" ry="3" fill="#FFE9AD" opacity="0.7" />
+      <ellipse cx="10" cy="6" rx="2.2" ry="3.2" fill="#FFCB63" opacity="0.8" />
+      <ellipse cx="6" cy="11" rx="2" ry="3" fill="#FFBE4E" opacity="0.6" />
+    </pattern>
   </defs>
-  <rect width="360" height="360" rx="48" fill="#0E0708" />
-  <circle cx="180" cy="160" r="160" fill="url(#paellaGlow)" opacity="0.6" />
+  <rect width="360" height="360" rx="48" fill="#12080B" />
+  <circle cx="180" cy="136" r="176" fill="url(#duskGlow)" opacity="0.6" />
   <g filter="url(#panShadow)">
-    <circle cx="180" cy="192" r="132" fill="url(#pan)" />
-    <circle cx="180" cy="192" r="112" fill="#1C1C26" />
-    <circle cx="180" cy="192" r="100" fill="url(#rice)" />
-    <path d="M120 182C100 202 112 234 144 244C176 254 208 230 210 202C212 176 170 152 144 162C132 166 126 174 120 182Z" fill="url(#shrimp)" />
-    <path d="M198 154C198 130 226 118 248 128C270 138 280 168 264 188C246 210 208 200 200 176C198 170 198 162 198 154Z" fill="url(#mussel)" />
-    <path d="M142 226C124 244 138 272 170 280C204 288 236 272 240 248C244 222 212 202 186 208C166 212 152 214 142 226Z" fill="url(#peas)" />
-    <circle cx="112" cy="176" r="12" fill="#FFEDC2" />
-    <circle cx="248" cy="164" r="12" fill="#FFEDC2" />
-    <circle cx="208" cy="232" r="10" fill="#FFEDC2" />
-    <circle cx="164" cy="216" r="8" fill="#FFEDC2" />
-    <circle cx="200" cy="188" r="8" fill="#FFEDC2" />
-    <path d="M90 128C78 110 84 88 104 80L134 68" stroke="#2E2C38" stroke-width="20" stroke-linecap="round" />
-    <path d="M270 128C282 110 276 88 256 80L226 68" stroke="#2E2C38" stroke-width="20" stroke-linecap="round" />
+    <circle cx="180" cy="194" r="138" fill="url(#panBody)" />
+    <circle cx="180" cy="194" r="120" fill="url(#panInner)" />
+    <circle cx="180" cy="194" r="110" fill="url(#saffronRice)" />
+    <circle cx="180" cy="194" r="108" fill="url(#riceTexture)" opacity="0.5" />
+    <path d="M110 188C106 210 120 236 148 246C178 258 212 246 226 220C240 194 224 160 194 148C168 138 118 144 110 188Z" fill="url(#pepper)" opacity="0.82" />
+    <path d="M124 224C106 246 118 278 150 288C186 300 232 278 244 246C254 220 224 206 198 210C170 214 140 200 124 224Z" fill="url(#shrimpBody)" />
+    <path d="M118 226C132 226 150 234 162 250C174 266 174 286 162 296" stroke="#89241D" stroke-width="6" stroke-linecap="round" opacity="0.5" />
+    <path d="M144 214C180 216 212 204 230 184" stroke="#F9AA87" stroke-width="8" stroke-linecap="round" opacity="0.4" />
+    <path d="M160 210C184 218 206 244 206 268" stroke="#FDD6C4" stroke-width="7" stroke-linecap="round" opacity="0.35" />
+    <path d="M140 230C132 250 140 268 160 274" stroke="#EAA18A" stroke-width="6" stroke-linecap="round" opacity="0.5" />
+    <circle cx="152" cy="238" r="40" fill="url(#shrimpGloss)" />
+    <path d="M228 144C224 116 246 92 272 92C300 92 322 118 314 144C304 180 246 186 232 156C228 148 230 152 228 144Z" fill="url(#musselShell)" />
+    <ellipse cx="256" cy="156" rx="34" ry="30" fill="url(#musselInner)" />
+    <path d="M246 148C244 138 250 126 264 120" stroke="#FFE7B8" stroke-width="6" stroke-linecap="round" opacity="0.65" />
+    <path d="M214 142C222 122 250 110 276 114" stroke="#353949" stroke-width="16" stroke-linecap="round" opacity="0.8" />
+    <path d="M90 140C78 120 84 94 104 84L136 70" stroke="#353949" stroke-width="20" stroke-linecap="round" />
+    <path d="M272 132C284 110 280 86 260 76L226 64" stroke="#353949" stroke-width="20" stroke-linecap="round" />
+    <circle cx="232" cy="228" r="44" fill="url(#lemon)" />
+    <path d="M232 188C256 196 268 224 258 248C248 274 220 286 196 276" stroke="#A76910" stroke-width="6" stroke-linecap="round" opacity="0.45" />
+    <path d="M232 228C248 228 262 238 268 252" stroke="#FEE7AB" stroke-width="6" stroke-linecap="round" opacity="0.6" />
+    <path d="M226 244C210 244 196 236 186 222" stroke="#FDE8BB" stroke-width="6" stroke-linecap="round" opacity="0.45" />
+    <circle cx="208" cy="198" r="10" fill="#FFE9B5" />
+    <circle cx="170" cy="184" r="8" fill="#FFE9B5" />
+    <circle cx="146" cy="210" r="6" fill="#FFE3A0" />
+    <path d="M92 192C90 220 110 248 140 256" stroke="#B2431F" stroke-width="8" stroke-linecap="round" opacity="0.35" />
+    <path d="M212 264C236 272 258 272 276 262" stroke="#E6BF60" stroke-width="8" stroke-linecap="round" opacity="0.45" />
+    <path d="M110 162C102 178 108 200 124 208" stroke="#FFB76D" stroke-width="6" stroke-linecap="round" opacity="0.45" />
+    <circle cx="180" cy="168" r="84" fill="url(#riceHighlight)" />
   </g>
-  <path d="M120 300H240" stroke="#F9C787" stroke-width="6" stroke-linecap="round" opacity="0.6" />
-  <circle cx="180" cy="300" r="6" fill="#FDEBD0" />
+  <path d="M110 302H250" stroke="#F0C98A" stroke-width="8" stroke-linecap="round" opacity="0.4" />
+  <path d="M126 314H232" stroke="#F0C98A" stroke-width="4" stroke-linecap="round" opacity="0.3" />
+  <path d="M84 104L120 72" stroke="url(#handle)" stroke-width="18" stroke-linecap="round" />
+  <path d="M276 104L240 72" stroke="url(#handle2)" stroke-width="18" stroke-linecap="round" />
+  <g opacity="0.55">
+    <circle cx="84" cy="90" r="12" fill="#FFC68A" />
+    <circle cx="282" cy="84" r="10" fill="#FFAA6A" />
+  </g>
 </svg>
