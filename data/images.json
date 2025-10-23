@@ -1,0 +1,244 @@
+{
+  "hero": [
+    {
+      "name": "Chef's tasting table",
+      "description": "An elevated chef's tasting spread perfect for a homepage hero banner.",
+      "url": "https://images.unsplash.com/photo-1525755662778-989d0524087e",
+      "source": {
+        "platform": "Unsplash",
+        "photographer": "Brooke Lark",
+        "license": "Free to use under the Unsplash License"
+      }
+    },
+    {
+      "name": "Fine dining plating",
+      "description": "Minimalist fine-dining dish with dramatic lighting and negative space.",
+      "url": "https://images.unsplash.com/photo-1555993539-1732b0258235",
+      "source": {
+        "platform": "Unsplash",
+        "photographer": "Edward Howell",
+        "license": "Free to use under the Unsplash License"
+      }
+    }
+  ],
+  "main_dishes": [
+    {
+      "name": "Cedar plank grilled salmon",
+      "description": "Salmon fillet with charred citrus and herbs on a cedar plank.",
+      "url": "https://images.pexels.com/photos/3296286/pexels-photo-3296286.jpeg",
+      "source": {
+        "platform": "Pexels",
+        "photographer": "Eiliv Aceron",
+        "license": "Free to use under the Pexels License"
+      }
+    },
+    {
+      "name": "Pasta carbonara",
+      "description": "Silky carbonara in a ceramic bowl with pancetta and parmesan.",
+      "url": "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg",
+      "source": {
+        "platform": "Pexels",
+        "photographer": "Engin Akyurt",
+        "license": "Free to use under the Pexels License"
+      }
+    },
+    {
+      "name": "Seared ribeye steak",
+      "description": "Medium-rare ribeye with grilled tomatoes and herbs.",
+      "url": "https://images.unsplash.com/photo-1553163147-622ab57e7c74",
+      "source": {
+        "platform": "Unsplash",
+        "photographer": "Keenan Barber",
+        "license": "Free to use under the Unsplash License"
+      }
+    },
+    {
+      "name": "Rainbow vegan bowl",
+      "description": "Plant-based bowl with quinoa, roasted vegetables, and avocado.",
+      "url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+      "source": {
+        "platform": "Unsplash",
+        "photographer": "Brooke Lark",
+        "license": "Free to use under the Unsplash License"
+      }
+    },
+    {
+      "name": "Sushi omakase",
+      "description": "Assorted nigiri sushi presented on a slate board.",
+      "url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c",
+      "source": {
+        "platform": "Unsplash",
+        "photographer": "Brooke Lark",
+        "license": "Free to use under the Unsplash License"
+      }
+    }
+  ],
+  "starters_and_sides": [
+    {
+      "name": "Mediterranean tapas board",
+      "description": "Tapas spread with olives, cured meats, and artisanal bread.",
+      "url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+      "source": {
+        "platform": "Unsplash",
+        "photographer": "Brooke Lark",
+        "license": "Free to use under the Unsplash License"
+      }
+    },
+    {
+      "name": "Roasted pumpkin soup",
+      "description": "Creamy autumn soup topped with seeds and herbs.",
+      "url": "https://images.unsplash.com/photo-1506086679521-2bf9ba36c39d",
+      "source": {
+        "platform": "Unsplash",
+        "photographer": "Calum Lewis",
+        "license": "Free to use under the Unsplash License"
+      }
+    },
+    {
+      "name": "Heirloom tomato bruschetta",
+      "description": "Bruschetta with heirloom tomatoes and fresh basil.",
+      "url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+      "source": {
+        "platform": "Unsplash",
+        "photographer": "Brooke Lark",
+        "license": "Free to use under the Unsplash License"
+      }
+    },
+    {
+      "name": "Garden-fresh salad",
+      "description": "Colorful salad with edible flowers and microgreens.",
+      "url": "https://images.unsplash.com/photo-1504753793650-d4a2b783c15e",
+      "source": {
+        "platform": "Unsplash",
+        "photographer": "Brooke Lark",
+        "license": "Free to use under the Unsplash License"
+      }
+    }
+  ],
+  "desserts": [
+    {
+      "name": "Molten chocolate lava cake",
+      "description": "Chocolate lava cake dusted with powdered sugar.",
+      "url": "https://images.unsplash.com/photo-1547609434-b732d2e54d4f",
+      "source": {
+        "platform": "Unsplash",
+        "photographer": "Maksim Goncharenok",
+        "license": "Free to use under the Unsplash License"
+      }
+    },
+    {
+      "name": "Classic New York cheesecake",
+      "description": "Cheesecake slice with berry compote and mint.",
+      "url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+      "source": {
+        "platform": "Unsplash",
+        "photographer": "Brooke Lark",
+        "license": "Free to use under the Unsplash License"
+      }
+    },
+    {
+      "name": "Italian tiramisu",
+      "description": "Layered tiramisu in a glass with cocoa dusting.",
+      "url": "https://images.unsplash.com/photo-1514516430032-7d5a1be1cbd0",
+      "source": {
+        "platform": "Unsplash",
+        "photographer": "Heather Ford",
+        "license": "Free to use under the Unsplash License"
+      }
+    },
+    {
+      "name": "Fresh berry tart",
+      "description": "Glazed berry tart with pistachio crumble.",
+      "url": "https://images.unsplash.com/photo-1488900128323-21503983a07e",
+      "source": {
+        "platform": "Unsplash",
+        "photographer": "Monika Grabkowska",
+        "license": "Free to use under the Unsplash License"
+      }
+    }
+  ],
+  "drinks": [
+    {
+      "name": "Citrus sunrise cocktail",
+      "description": "Vibrant citrus cocktail with crushed ice and garnish.",
+      "url": "https://images.unsplash.com/photo-1563371351-e53ebb744a1b",
+      "source": {
+        "platform": "Unsplash",
+        "photographer": "Proriat Hospitality",
+        "license": "Free to use under the Unsplash License"
+      }
+    },
+    {
+      "name": "Artisanal smoothies",
+      "description": "Array of colorful smoothies in glass bottles.",
+      "url": "https://images.unsplash.com/photo-1504544750208-dc0358e63f7f",
+      "source": {
+        "platform": "Unsplash",
+        "photographer": "Brenda Godinez",
+        "license": "Free to use under the Unsplash License"
+      }
+    },
+    {
+      "name": "Sommelier wine pour",
+      "description": "Red wine being poured into crystal stemware.",
+      "url": "https://images.unsplash.com/photo-1510626176961-4b37d0f0b335",
+      "source": {
+        "platform": "Unsplash",
+        "photographer": "Kelsey Knight",
+        "license": "Free to use under the Unsplash License"
+      }
+    },
+    {
+      "name": "Barista latte art",
+      "description": "Close-up of latte art in a contemporary cafe setting.",
+      "url": "https://images.unsplash.com/photo-1504753793650-d4a2b783c15e",
+      "source": {
+        "platform": "Unsplash",
+        "photographer": "Brooke Lark",
+        "license": "Free to use under the Unsplash License"
+      }
+    }
+  ],
+  "chefs_specials": [
+    {
+      "name": "Vibrant chef's signature plate",
+      "description": "Colorful composed dish with microgreens and edible flowers.",
+      "url": "https://images.unsplash.com/photo-1481931098730-318b6f776db0",
+      "source": {
+        "platform": "Unsplash",
+        "photographer": "Mgg Vitchakorn",
+        "license": "Free to use under the Unsplash License"
+      }
+    },
+    {
+      "name": "Nordic tasting course",
+      "description": "Modern Nordic dish with precise plating and smoky elements.",
+      "url": "https://images.unsplash.com/photo-1473093226795-af9932fe5856",
+      "source": {
+        "platform": "Unsplash",
+        "photographer": "Stefan Johnson",
+        "license": "Free to use under the Unsplash License"
+      }
+    },
+    {
+      "name": "Seasonal vegetable medley",
+      "description": "Roasted vegetables plated with a painterly sauce swoosh.",
+      "url": "https://images.unsplash.com/photo-1447078806655-40579c2520d6",
+      "source": {
+        "platform": "Unsplash",
+        "photographer": "Mgg Vitchakorn",
+        "license": "Free to use under the Unsplash License"
+      }
+    },
+    {
+      "name": "Chef's seafood artistry",
+      "description": "Elegant seafood composition with scallops and herbs.",
+      "url": "https://images.unsplash.com/photo-1541542684-4abf21a55761",
+      "source": {
+        "platform": "Unsplash",
+        "photographer": "Casey Lee",
+        "license": "Free to use under the Unsplash License"
+      }
+    }
+  ]
+}
