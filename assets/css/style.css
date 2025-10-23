@@ -275,7 +275,9 @@ img {
   justify-content: center;
   align-items: stretch;
   gap: 1.25rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
 }
 
 .hero-gallery figure {
@@ -288,6 +290,7 @@ img {
   align-items: center;
   gap: 0.75rem;
   width: min(240px, 28vw);
+  flex: 0 0 min(240px, 28vw);
 }
 
 .hero-gallery figure img {
@@ -934,6 +937,7 @@ textarea {
 
   .hero-gallery figure {
     width: min(220px, 40vw);
+    flex: 0 0 min(220px, 40vw);
   }
 
   .menu-highlight {
@@ -964,6 +968,7 @@ textarea {
 
   .hero-gallery figure {
     width: min(260px, 70vw);
+    flex: 0 0 min(260px, 70vw);
   }
 
   .menu-highlight {
