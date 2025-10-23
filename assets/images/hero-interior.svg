@@ -1,26 +1,50 @@
 <svg width="360" height="360" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="walls" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#214950" />
-      <stop offset="1" stop-color="#133840" />
+    <linearGradient id="wallGradient" x1="60" y1="60" x2="300" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2F1E36" />
+      <stop offset="1" stop-color="#120A1B" />
     </linearGradient>
-    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#F4C47C" />
-      <stop offset="1" stop-color="#D47A2C" />
+    <linearGradient id="lightGlow" x1="180" y1="40" x2="180" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFDCA8" />
+      <stop offset="1" stop-color="#FF8A3D" stop-opacity="0" />
     </linearGradient>
+    <linearGradient id="tableTop" x1="80" y1="220" x2="280" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4A2A1C" />
+      <stop offset="1" stop-color="#2A160E" />
+    </linearGradient>
+    <linearGradient id="chair" x1="72" y1="220" x2="132" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D96F46" />
+      <stop offset="1" stop-color="#A2351C" />
+    </linearGradient>
+    <linearGradient id="plant" x1="280" y1="180" x2="320" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67D16C" />
+      <stop offset="1" stop-color="#1D7F32" />
+    </linearGradient>
+    <filter id="shadow" x="36" y="40" width="288" height="272" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="12" />
+      <feGaussianBlur stdDeviation="16" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.08 0 0 0 0 0.06 0 0 0 0 0.1 0 0 0 0.3 0" />
+      <feBlend in="SourceGraphic" result="shape" />
+    </filter>
   </defs>
-  <rect width="360" height="360" rx="48" fill="#100A0A" />
-  <rect x="40" y="60" width="280" height="220" rx="36" fill="url(#walls)" />
-  <rect x="72" y="96" width="216" height="148" rx="28" fill="#0F2026" />
-  <rect x="92" y="116" width="176" height="108" rx="22" fill="#0B161B" />
-  <g opacity="0.7">
-    <circle cx="132" cy="160" r="44" fill="#F4C47C" />
-    <circle cx="228" cy="160" r="44" fill="#D47A2C" />
-    <rect x="132" y="120" width="96" height="16" rx="8" fill="#FDECD6" opacity="0.3" />
-    <rect x="124" y="198" width="112" height="18" rx="9" fill="#FDECD6" opacity="0.25" />
+  <rect width="360" height="360" rx="48" fill="#0A050C" />
+  <g filter="url(#shadow)">
+    <rect x="52" y="72" width="256" height="192" rx="24" fill="url(#wallGradient)" />
+    <ellipse cx="180" cy="152" rx="90" ry="64" fill="#1C1024" />
+    <path d="M180 60L212 136H148L180 60Z" fill="#FFDFAD" />
+    <ellipse cx="180" cy="160" rx="120" ry="80" fill="url(#lightGlow)" opacity="0.6" />
+    <path d="M88 264H272L254 316H106L88 264Z" fill="url(#tableTop)" />
+    <ellipse cx="180" cy="284" rx="120" ry="32" fill="#1A0C08" opacity="0.5" />
   </g>
-  <rect x="132" y="242" width="96" height="40" rx="20" fill="#2A140C" opacity="0.8" />
-  <rect x="152" y="252" width="56" height="20" rx="10" fill="#F4C47C" opacity="0.7" />
-  <circle cx="180" cy="70" r="34" fill="url(#glow)" opacity="0.8" />
-  <path d="M108 302H252" stroke="#F4C47C" stroke-opacity="0.3" stroke-width="8" stroke-linecap="round" />
+  <path d="M120 216C128 200 150 188 180 188C210 188 232 200 240 216" stroke="#F4E2D6" stroke-width="6" stroke-linecap="round" />
+  <path d="M72 220L96 292" stroke="#541F10" stroke-width="16" stroke-linecap="round" />
+  <path d="M132 220L108 292" stroke="#541F10" stroke-width="16" stroke-linecap="round" />
+  <path d="M288 220L312 292" stroke="#541F10" stroke-width="16" stroke-linecap="round" />
+  <path d="M228 220L252 292" stroke="#541F10" stroke-width="16" stroke-linecap="round" />
+  <rect x="68" y="224" width="60" height="60" rx="22" fill="url(#chair)" />
+  <rect x="232" y="224" width="60" height="60" rx="22" fill="url(#chair)" transform="scale(-1,1) translate(-552,0)" />
+  <path d="M286 178C296 160 320 156 332 172C346 190 338 224 314 236C290 248 266 230 268 208C268 196 276 188 286 178Z" fill="url(#plant)" />
+  <circle cx="304" cy="168" r="10" fill="#F9F871" opacity="0.6" />
+  <circle cx="180" cy="48" r="8" fill="#FFE7B2" />
+  <path d="M144 304H216" stroke="#F1C7A3" stroke-width="6" stroke-linecap="round" opacity="0.5" />
 </svg>

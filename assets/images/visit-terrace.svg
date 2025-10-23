@@ -1,50 +1,49 @@
-<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="360" height="360" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="nightSky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#1C2B3C" />
-      <stop offset="1" stop-color="#0A1018" />
-    </linearGradient>
-    <radialGradient id="lanternGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(340 220) scale(260)">
-      <stop stop-color="#F4C47C" stop-opacity="0.9" />
-      <stop offset="1" stop-color="#F4C47C" stop-opacity="0" />
+    <radialGradient id="sunset" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 140) scale(220)">
+      <stop offset="0" stop-color="#FFE5C3" />
+      <stop offset="1" stop-color="#FF7A5C" />
     </radialGradient>
-    <linearGradient id="seaGradient" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#214950" />
-      <stop offset="1" stop-color="#16343B" />
+    <linearGradient id="table" x1="80" y1="220" x2="280" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8D8A1" />
+      <stop offset="1" stop-color="#D29A54" />
     </linearGradient>
-    <linearGradient id="tableTop" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#5C2E1B" />
-      <stop offset="1" stop-color="#2A140C" />
+    <linearGradient id="chairTerrace" x1="72" y1="220" x2="136" y2="312" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF9F68" />
+      <stop offset="1" stop-color="#D14E2A" />
     </linearGradient>
+    <linearGradient id="foliage" x1="248" y1="160" x2="320" y2="240" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#74E087" />
+      <stop offset="1" stop-color="#2E7F3D" />
+    </linearGradient>
+    <filter id="terraceShadow" x="40" y="40" width="280" height="292" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="12" />
+      <feGaussianBlur stdDeviation="16" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.09 0 0 0 0 0.06 0 0 0 0 0.12 0 0 0 0.28 0" />
+      <feBlend in="SourceGraphic" result="shape" />
+    </filter>
   </defs>
-  <rect width="1200" height="900" rx="52" fill="url(#nightSky)" />
-  <rect x="60" y="540" width="1080" height="260" rx="44" fill="#0E171E" opacity="0.65" />
-  <rect x="80" y="560" width="1040" height="220" rx="40" fill="#13242D" />
-  <path d="M0 480C120 430 260 410 380 420C520 430 700 490 860 500C980 508 1100 488 1200 460V280C1080 310 940 320 840 310C640 290 420 200 200 210C140 212 70 224 0 242V480Z" fill="url(#seaGradient)" opacity="0.85" />
-  <rect x="120" y="200" width="960" height="320" rx="48" fill="#112029" />
-  <path d="M120 340H1080" stroke="#F4C47C" stroke-opacity="0.16" stroke-width="2" stroke-dasharray="12 18" />
-  <circle cx="360" cy="220" r="200" fill="url(#lanternGlow)" />
-  <g opacity="0.45">
-    <circle cx="900" cy="180" r="30" fill="#F4C47C" />
-    <circle cx="980" cy="240" r="24" fill="#D47A2C" />
-    <circle cx="840" cy="260" r="20" fill="#F4C47C" />
+  <rect width="360" height="360" rx="48" fill="#140807" />
+  <circle cx="180" cy="150" r="160" fill="url(#sunset)" opacity="0.62" />
+  <g filter="url(#terraceShadow)">
+    <path d="M80 240H280L260 300H100L80 240Z" fill="url(#table)" />
+    <ellipse cx="180" cy="252" rx="120" ry="44" fill="#8F5B2F" opacity="0.35" />
+    <ellipse cx="180" cy="230" rx="102" ry="32" fill="#FFF1DA" />
+    <ellipse cx="180" cy="226" rx="86" ry="26" fill="#F7D8A8" />
+    <path d="M116 214C128 198 152 188 180 188C208 188 232 198 244 214" stroke="#FFE7CC" stroke-width="8" stroke-linecap="round" />
+    <path d="M76 220L96 296" stroke="#8F4A22" stroke-width="16" stroke-linecap="round" />
+    <path d="M132 220L112 296" stroke="#8F4A22" stroke-width="16" stroke-linecap="round" />
+    <path d="M284 220L304 296" stroke="#8F4A22" stroke-width="16" stroke-linecap="round" />
+    <path d="M228 220L248 296" stroke="#8F4A22" stroke-width="16" stroke-linecap="round" />
+    <rect x="72" y="224" width="56" height="60" rx="22" fill="url(#chairTerrace)" />
+    <rect x="232" y="224" width="56" height="60" rx="22" fill="url(#chairTerrace)" transform="scale(-1,1) translate(-520,0)" />
   </g>
-  <g transform="translate(220 360)" opacity="0.9">
-    <rect width="760" height="320" rx="40" fill="url(#tableTop)" />
-    <rect x="60" y="60" width="640" height="200" rx="30" fill="#321A12" />
-    <circle cx="210" cy="160" r="78" fill="#F4C47C" opacity="0.65" />
-    <circle cx="380" cy="150" r="72" fill="#D47A2C" opacity="0.55" />
-    <circle cx="540" cy="170" r="64" fill="#F4C47C" opacity="0.5" />
-    <rect x="160" y="130" width="100" height="28" rx="14" fill="#FDF8F4" opacity="0.28" />
-    <rect x="320" y="130" width="120" height="28" rx="14" fill="#FDF8F4" opacity="0.28" />
-    <rect x="480" y="130" width="100" height="28" rx="14" fill="#FDF8F4" opacity="0.28" />
-    <circle cx="210" cy="160" r="24" fill="#401F14" opacity="0.6" />
-    <circle cx="380" cy="150" r="20" fill="#401F14" opacity="0.6" />
-    <circle cx="540" cy="170" r="22" fill="#401F14" opacity="0.6" />
-  </g>
-  <g opacity="0.3">
-    <circle cx="200" cy="720" r="24" fill="#F4C47C" />
-    <circle cx="1000" cy="740" r="28" fill="#D47A2C" />
-    <circle cx="900" cy="640" r="20" fill="#F4C47C" />
+  <path d="M252 192C262 174 288 168 308 178C328 188 336 212 324 230C312 248 284 250 264 238C248 228 244 210 252 192Z" fill="url(#foliage)" />
+  <circle cx="288" cy="168" r="12" fill="#FFF59D" />
+  <path d="M120 100C132 88 152 80 180 80C208 80 228 88 240 100" stroke="#FFEAD2" stroke-width="8" stroke-linecap="round" />
+  <path d="M148 312H212" stroke="#F7D8A8" stroke-width="10" stroke-linecap="round" opacity="0.6" />
+  <g opacity="0.55">
+    <circle cx="88" cy="90" r="10" fill="#FF8A6C" />
+    <circle cx="272" cy="76" r="8" fill="#FFD3A6" />
   </g>
 </svg>
