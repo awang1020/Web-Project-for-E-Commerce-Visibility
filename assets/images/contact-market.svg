@@ -1,49 +1,49 @@
-<svg width="960" height="900" viewBox="0 0 960 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="360" height="360" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="marketBg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#1F2C2F" />
-      <stop offset="1" stop-color="#0D1415" />
+    <radialGradient id="marketGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 140) scale(220)">
+      <stop offset="0" stop-color="#FFF7D6" />
+      <stop offset="1" stop-color="#F4A261" />
+    </radialGradient>
+    <linearGradient id="stall" x1="80" y1="100" x2="280" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFEDDB" />
+      <stop offset="1" stop-color="#F6C7A5" />
     </linearGradient>
-    <linearGradient id="stall" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#F4C47C" />
-      <stop offset="1" stop-color="#D47A2C" />
+    <linearGradient id="awning" x1="80" y1="96" x2="280" y2="156" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF6B6B" />
+      <stop offset="1" stop-color="#D62839" />
     </linearGradient>
-    <linearGradient id="awning" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#D65A3B" />
-      <stop offset="1" stop-color="#A3341E" />
+    <linearGradient id="produce1" x1="120" y1="188" x2="188" y2="248" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6CD872" />
+      <stop offset="1" stop-color="#2D8A35" />
     </linearGradient>
-    <linearGradient id="crate" x1="0" y1="1" x2="1" y2="0">
-      <stop offset="0" stop-color="#5B2C1A" />
-      <stop offset="1" stop-color="#2A140C" />
+    <linearGradient id="produce2" x1="188" y1="184" x2="256" y2="244" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD86F" />
+      <stop offset="1" stop-color="#FF9640" />
     </linearGradient>
+    <filter id="marketShadow" x="44" y="52" width="272" height="276" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="12" />
+      <feGaussianBlur stdDeviation="16" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.1 0 0 0 0 0.08 0 0 0 0 0.06 0 0 0 0.28 0" />
+      <feBlend in="SourceGraphic" result="shape" />
+    </filter>
   </defs>
-  <rect width="960" height="900" rx="48" fill="url(#marketBg)" />
-  <g opacity="0.36">
-    <circle cx="160" cy="180" r="28" fill="#F4C47C" />
-    <circle cx="780" cy="200" r="24" fill="#D47A2C" />
-    <circle cx="840" cy="720" r="32" fill="#F4C47C" />
+  <rect width="360" height="360" rx="48" fill="#120806" />
+  <circle cx="180" cy="150" r="160" fill="url(#marketGlow)" opacity="0.58" />
+  <g filter="url(#marketShadow)">
+    <rect x="80" y="104" width="200" height="200" rx="24" fill="url(#stall)" />
+    <rect x="80" y="96" width="200" height="60" rx="20" fill="url(#awning)" />
+    <path d="M84 140H276" stroke="#FFF1E3" stroke-width="6" stroke-linecap="round" />
+    <path d="M108 220C108 196 132 176 164 176C196 176 220 196 220 220V256H108V220Z" fill="url(#produce1)" />
+    <path d="M188 220C188 196 212 176 244 176C276 176 300 196 300 220V256H188V220Z" fill="url(#produce2)" transform="translate(-32,0)" />
+    <path d="M92 264H268" stroke="#E5B28E" stroke-width="8" stroke-linecap="round" />
+    <circle cx="140" cy="208" r="24" fill="#8CED91" />
+    <circle cx="204" cy="208" r="20" fill="#FFE28C" />
+    <circle cx="172" cy="234" r="18" fill="#FFD6A4" />
+    <path d="M112 176L128 132H232L248 176" stroke="#FFF5EC" stroke-width="8" stroke-linecap="round" />
   </g>
-  <rect x="120" y="160" width="720" height="520" rx="44" fill="#102022" />
-  <rect x="160" y="200" width="640" height="440" rx="36" fill="#142A2E" />
-  <rect x="180" y="220" width="600" height="140" rx="30" fill="url(#awning)" />
-  <rect x="180" y="260" width="600" height="320" rx="34" fill="#0E1D1F" />
-  <rect x="220" y="300" width="520" height="240" rx="32" fill="#142A2E" />
-  <rect x="260" y="340" width="440" height="160" rx="28" fill="#0E1D1F" />
-  <rect x="320" y="364" width="320" height="112" rx="24" fill="url(#stall)" />
-  <circle cx="380" cy="380" r="22" fill="#FDF8F4" opacity="0.2" />
-  <circle cx="580" cy="420" r="30" fill="#FDF8F4" opacity="0.18" />
-  <rect x="340" y="496" width="280" height="24" rx="12" fill="#F4C47C" opacity="0.5" />
-  <rect x="360" y="532" width="220" height="18" rx="9" fill="#FDF8F4" opacity="0.32" />
-  <g transform="translate(200 540)">
-    <rect width="200" height="160" rx="28" fill="url(#crate)" />
-    <circle cx="60" cy="80" r="32" fill="#F4C47C" opacity="0.8" />
-    <circle cx="130" cy="70" r="28" fill="#D47A2C" opacity="0.7" />
-    <circle cx="150" cy="110" r="20" fill="#F4C47C" opacity="0.6" />
-  </g>
-  <g transform="translate(560 540)">
-    <rect width="200" height="160" rx="28" fill="url(#crate)" />
-    <circle cx="70" cy="80" r="30" fill="#F4C47C" opacity="0.8" />
-    <circle cx="122" cy="66" r="26" fill="#D47A2C" opacity="0.7" />
-    <circle cx="138" cy="116" r="22" fill="#F4C47C" opacity="0.6" />
+  <g opacity="0.6">
+    <circle cx="84" cy="96" r="10" fill="#FF8A6C" />
+    <circle cx="276" cy="92" r="8" fill="#FFD6A3" />
+    <path d="M72 304C86 282 112 268 140 268H220C248 268 274 282 288 304" stroke="#FFE7CB" stroke-width="10" stroke-linecap="round" />
   </g>
 </svg>

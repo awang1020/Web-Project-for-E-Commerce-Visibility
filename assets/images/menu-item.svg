@@ -1,19 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-labelledby="title desc">
-  <title id="title">Casa Sabor menu item placeholder</title>
-  <desc id="desc">Abstract illustration of a plated dish used as a placeholder image.</desc>
-  <rect width="640" height="480" fill="#edf2f7" />
-  <rect x="120" y="140" width="400" height="200" rx="40" fill="#f7fafc" stroke="#cbd5e0" stroke-width="4" />
-  <circle cx="320" cy="240" r="90" fill="#feb2b2" />
-  <circle cx="320" cy="240" r="60" fill="#fbd38d" />
-  <path
-    d="M260 260c30-40 120-40 150 0"
-    fill="none"
-    stroke="#2b6cb0"
-    stroke-width="8"
-    stroke-linecap="round"
-  />
-  <text x="320" y="360" font-family="'Source Sans 3', sans-serif" font-size="32" text-anchor="middle" fill="#2d3748">
-    Casa Sabor
-  </text>
+<svg width="360" height="360" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="menuGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 140) scale(220)">
+      <stop offset="0" stop-color="#FFF5E2" />
+      <stop offset="1" stop-color="#F7B347" />
+    </radialGradient>
+    <linearGradient id="card" x1="88" y1="100" x2="272" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" />
+      <stop offset="1" stop-color="#F5E7D2" />
+    </linearGradient>
+    <linearGradient id="dishHighlight" x1="156" y1="196" x2="244" y2="276" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFCC8A" />
+      <stop offset="1" stop-color="#FF964A" />
+    </linearGradient>
+    <linearGradient id="greens" x1="136" y1="220" x2="220" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9DF091" />
+      <stop offset="1" stop-color="#47A452" />
+    </linearGradient>
+    <filter id="cardShadow2" x="52" y="64" width="256" height="272" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="12" />
+      <feGaussianBlur stdDeviation="16" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.1 0 0 0 0 0.08 0 0 0 0 0.04 0 0 0 0.25 0" />
+      <feBlend in="SourceGraphic" result="shape" />
+    </filter>
+  </defs>
+  <rect width="360" height="360" rx="48" fill="#110805" />
+  <circle cx="180" cy="140" r="160" fill="url(#menuGlow)" opacity="0.58" />
+  <g filter="url(#cardShadow2)">
+    <rect x="88" y="96" width="184" height="232" rx="28" fill="url(#card)" />
+    <rect x="108" y="120" width="144" height="36" rx="12" fill="#FFF5E6" />
+    <rect x="120" y="128" width="72" height="20" rx="10" fill="#F77F54" />
+    <circle cx="180" cy="232" r="72" fill="#FFF4E0" />
+    <circle cx="180" cy="232" r="58" fill="url(#dishHighlight)" />
+    <path d="M152 220C138 238 152 264 180 268C212 272 242 246 228 220C218 200 166 200 152 220Z" fill="#FFE9C3" />
+    <path d="M138 240C126 256 138 280 162 286C188 292 220 276 220 252C220 230 156 220 138 240Z" fill="url(#greens)" />
+    <path d="M160 200C166 188 188 182 206 186C228 192 238 212 226 226C212 242 172 236 164 214C160 204 158 208 160 200Z" fill="#FFEDCB" />
+    <path d="M128 292H232" stroke="#E2C39B" stroke-width="8" stroke-linecap="round" opacity="0.4" />
+    <path d="M116 180H244" stroke="#F2DCC4" stroke-width="6" stroke-linecap="round" opacity="0.6" />
+    <circle cx="208" cy="132" r="10" fill="#FFC59F" />
+  </g>
+  <g opacity="0.6">
+    <circle cx="84" cy="96" r="10" fill="#FF8A6C" />
+    <circle cx="276" cy="72" r="8" fill="#FFD7B0" />
+    <path d="M80 312C94 288 120 272 148 272H212C240 272 266 288 280 312" stroke="#FFEED9" stroke-width="10" stroke-linecap="round" />
+  </g>
 </svg>

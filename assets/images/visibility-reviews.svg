@@ -1,47 +1,54 @@
-<svg width="1000" height="800" viewBox="0 0 1000 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="360" height="360" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#214950" />
-      <stop offset="1" stop-color="#133840" />
+    <radialGradient id="reviewGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 140) scale(220)">
+      <stop offset="0" stop-color="#EAF5FF" />
+      <stop offset="1" stop-color="#7AB6FF" />
+    </radialGradient>
+    <linearGradient id="cardA" x1="80" y1="108" x2="200" y2="248" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" />
+      <stop offset="1" stop-color="#DAE5FF" />
     </linearGradient>
-    <linearGradient id="card1" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#F4C47C" />
-      <stop offset="1" stop-color="#D47A2C" />
+    <linearGradient id="cardB" x1="160" y1="152" x2="288" y2="288" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF6E5" />
+      <stop offset="1" stop-color="#FFD7A1" />
     </linearGradient>
-    <linearGradient id="card2" x1="0" y1="1" x2="1" y2="0">
-      <stop offset="0" stop-color="#FBE6D0" />
-      <stop offset="1" stop-color="#F4C47C" />
+    <linearGradient id="avatar" x1="120" y1="132" x2="176" y2="196" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFB58C" />
+      <stop offset="1" stop-color="#FF8A62" />
     </linearGradient>
+    <filter id="reviewShadow" x="44" y="52" width="272" height="276" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="12" />
+      <feGaussianBlur stdDeviation="16" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.08 0 0 0 0 0.08 0 0 0 0 0.12 0 0 0 0.26 0" />
+      <feBlend in="SourceGraphic" result="shape" />
+    </filter>
   </defs>
-  <rect width="1000" height="800" rx="48" fill="#120908" />
-  <rect x="80" y="120" width="840" height="560" rx="44" fill="url(#panel)" />
-  <g opacity="0.32">
-    <circle cx="200" cy="200" r="28" fill="#F4C47C" />
-    <circle cx="840" cy="220" r="22" fill="#D47A2C" />
-    <circle cx="740" cy="660" r="30" fill="#F4C47C" />
+  <rect width="360" height="360" rx="48" fill="#051022" />
+  <circle cx="180" cy="150" r="160" fill="url(#reviewGlow)" opacity="0.6" />
+  <g filter="url(#reviewShadow)">
+    <rect x="80" y="108" width="148" height="192" rx="24" fill="url(#cardA)" />
+    <rect x="160" y="152" width="148" height="168" rx="24" fill="url(#cardB)" />
+    <circle cx="142" cy="156" r="32" fill="url(#avatar)" />
+    <circle cx="142" cy="154" r="24" fill="#FFD3B6" />
+    <path d="M120 208H200" stroke="#C9D9FF" stroke-width="10" stroke-linecap="round" />
+    <path d="M120 238H196" stroke="#C9D9FF" stroke-width="8" stroke-linecap="round" opacity="0.7" />
+    <path d="M120 268H188" stroke="#C9D9FF" stroke-width="8" stroke-linecap="round" opacity="0.4" />
+    <path d="M190 196H276" stroke="#FFE0B8" stroke-width="10" stroke-linecap="round" />
+    <path d="M190 224H272" stroke="#FFE0B8" stroke-width="8" stroke-linecap="round" opacity="0.7" />
+    <path d="M190 252H258" stroke="#FFE0B8" stroke-width="8" stroke-linecap="round" opacity="0.4" />
+    <g transform="translate(190,160)">
+      <path d="M28 0L35.416 17.184L54 19.416L40 32.416L43.832 51.584L28 41.6L12.168 51.584L16 32.416L2 19.416L20.584 17.184L28 0Z" fill="#FFB347" />
+    </g>
+    <g transform="translate(214,170)">
+      <path d="M20 0L25.24 12.112L38 13.624L28 22.944L30.664 36L20 29.6L9.336 36L12 22.944L2 13.624L14.76 12.112L20 0Z" fill="#FFD37A" />
+    </g>
+    <g transform="translate(246,178)">
+      <path d="M16 0L20.192 9.184L30 10.352L22 17.496L24.16 27.6L16 22.4L7.84 27.6L10 17.496L2 10.352L11.808 9.184L16 0Z" fill="#FFE6A8" />
+    </g>
   </g>
-  <g transform="translate(160 200)">
-    <rect width="280" height="360" rx="32" fill="#0E2126" opacity="0.8" />
-    <rect x="32" y="48" width="216" height="80" rx="24" fill="url(#card1)" />
-    <circle cx="140" cy="92" r="34" fill="#FDF8F4" opacity="0.2" />
-    <rect x="52" y="156" width="176" height="18" rx="9" fill="#FDF8F4" opacity="0.35" />
-    <rect x="52" y="188" width="200" height="18" rx="9" fill="#FDF8F4" opacity="0.28" />
-    <rect x="52" y="220" width="144" height="18" rx="9" fill="#FDF8F4" opacity="0.22" />
-    <rect x="52" y="278" width="184" height="24" rx="12" fill="#F4C47C" opacity="0.45" />
-    <rect x="52" y="318" width="140" height="18" rx="9" fill="#FDF8F4" opacity="0.3" />
-  </g>
-  <g transform="translate(480 180)">
-    <rect width="360" height="200" rx="34" fill="#0E2126" opacity="0.8" />
-    <rect x="40" y="40" width="280" height="80" rx="26" fill="url(#card2)" />
-    <rect x="60" y="140" width="140" height="20" rx="10" fill="#FDF8F4" opacity="0.36" />
-    <rect x="220" y="140" width="100" height="20" rx="10" fill="#FDF8F4" opacity="0.28" />
-  </g>
-  <g transform="translate(440 420)">
-    <rect width="420" height="200" rx="36" fill="#0E2126" opacity="0.8" />
-    <rect x="48" y="44" width="324" height="48" rx="24" fill="#133840" opacity="0.8" />
-    <rect x="72" y="108" width="180" height="20" rx="10" fill="#FDF8F4" opacity="0.35" />
-    <rect x="268" y="108" width="96" height="20" rx="10" fill="#FDF8F4" opacity="0.28" />
-    <circle cx="120" cy="132" r="28" fill="#F4C47C" opacity="0.48" />
-    <circle cx="280" cy="132" r="24" fill="#D47A2C" opacity="0.45" />
+  <g opacity="0.6">
+    <circle cx="92" cy="96" r="10" fill="#7DC4FF" />
+    <circle cx="272" cy="80" r="8" fill="#FFE0B8" />
+    <path d="M84 304C98 282 124 268 152 268H208C236 268 262 282 276 304" stroke="#BBD7FF" stroke-width="10" stroke-linecap="round" />
   </g>
 </svg>

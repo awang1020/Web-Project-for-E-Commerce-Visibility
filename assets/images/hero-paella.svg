@@ -1,23 +1,53 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
-  <title id="title">Casa Sabor hero illustration</title>
-  <desc id="desc">Stylized pan of paella representing Casa Sabor's signature dish.</desc>
-  <rect width="800" height="600" fill="#1f2933" />
-  <circle cx="400" cy="300" r="220" fill="#f6ad55" />
-  <circle cx="400" cy="300" r="180" fill="#fbd38d" />
-  <g fill="#2f855a">
-    <circle cx="520" cy="240" r="24" />
-    <circle cx="320" cy="380" r="18" />
-    <circle cx="420" cy="420" r="16" />
-    <circle cx="260" cy="260" r="20" />
+<svg width="360" height="360" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="paellaGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 160) scale(200)">
+      <stop offset="0" stop-color="#FFE7B2" />
+      <stop offset="1" stop-color="#FF9F1C" />
+    </radialGradient>
+    <linearGradient id="pan" x1="64" y1="56" x2="296" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2C2A35" />
+      <stop offset="1" stop-color="#14121A" />
+    </linearGradient>
+    <linearGradient id="rice" x1="108" y1="132" x2="252" y2="260" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFEDB3" />
+      <stop offset="1" stop-color="#FFBD45" />
+    </linearGradient>
+    <linearGradient id="shrimp" x1="96" y1="168" x2="180" y2="252" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF8A6C" />
+      <stop offset="1" stop-color="#E6453C" />
+    </linearGradient>
+    <linearGradient id="mussel" x1="220" y1="132" x2="280" y2="204" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A1E3A" />
+      <stop offset="1" stop-color="#060712" />
+    </linearGradient>
+    <linearGradient id="peas" x1="150" y1="212" x2="210" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9BF080" />
+      <stop offset="1" stop-color="#3F9C3A" />
+    </linearGradient>
+    <filter id="panShadow" x="28" y="44" width="304" height="292" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="12" />
+      <feGaussianBlur stdDeviation="18" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.12 0 0 0 0 0.08 0 0 0 0 0.04 0 0 0 0.28 0" />
+      <feBlend in="SourceGraphic" result="shape" />
+    </filter>
+  </defs>
+  <rect width="360" height="360" rx="48" fill="#0E0708" />
+  <circle cx="180" cy="160" r="160" fill="url(#paellaGlow)" opacity="0.6" />
+  <g filter="url(#panShadow)">
+    <circle cx="180" cy="192" r="132" fill="url(#pan)" />
+    <circle cx="180" cy="192" r="112" fill="#1C1C26" />
+    <circle cx="180" cy="192" r="100" fill="url(#rice)" />
+    <path d="M120 182C100 202 112 234 144 244C176 254 208 230 210 202C212 176 170 152 144 162C132 166 126 174 120 182Z" fill="url(#shrimp)" />
+    <path d="M198 154C198 130 226 118 248 128C270 138 280 168 264 188C246 210 208 200 200 176C198 170 198 162 198 154Z" fill="url(#mussel)" />
+    <path d="M142 226C124 244 138 272 170 280C204 288 236 272 240 248C244 222 212 202 186 208C166 212 152 214 142 226Z" fill="url(#peas)" />
+    <circle cx="112" cy="176" r="12" fill="#FFEDC2" />
+    <circle cx="248" cy="164" r="12" fill="#FFEDC2" />
+    <circle cx="208" cy="232" r="10" fill="#FFEDC2" />
+    <circle cx="164" cy="216" r="8" fill="#FFEDC2" />
+    <circle cx="200" cy="188" r="8" fill="#FFEDC2" />
+    <path d="M90 128C78 110 84 88 104 80L134 68" stroke="#2E2C38" stroke-width="20" stroke-linecap="round" />
+    <path d="M270 128C282 110 276 88 256 80L226 68" stroke="#2E2C38" stroke-width="20" stroke-linecap="round" />
   </g>
-  <g fill="#c53030">
-    <circle cx="470" cy="320" r="18" />
-    <circle cx="360" cy="230" r="14" />
-    <circle cx="300" cy="320" r="12" />
-    <circle cx="500" cy="380" r="16" />
-  </g>
-  <text x="400" y="560" font-family="'Playfair Display', serif" font-size="48" text-anchor="middle" fill="#f7fafc">
-    Casa Sabor
-  </text>
+  <path d="M120 300H240" stroke="#F9C787" stroke-width="6" stroke-linecap="round" opacity="0.6" />
+  <circle cx="180" cy="300" r="6" fill="#FDEBD0" />
 </svg>

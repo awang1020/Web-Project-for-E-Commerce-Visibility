@@ -1,16 +1,51 @@
 <svg width="360" height="360" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <radialGradient id="gradient" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 120) scale(200)">
-      <stop offset="0" stop-color="#F4C47C" />
-      <stop offset="1" stop-color="#D47A2C" />
+    <radialGradient id="boardGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 180) scale(200)">
+      <stop offset="0" stop-color="#FFE9C6" />
+      <stop offset="1" stop-color="#F7C173" />
     </radialGradient>
+    <linearGradient id="boardWood" x1="96" y1="64" x2="280" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6D3B1C" />
+      <stop offset="1" stop-color="#4B210E" />
+    </linearGradient>
+    <linearGradient id="prosciutto" x1="90" y1="120" x2="180" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8A7A0" />
+      <stop offset="1" stop-color="#D46460" />
+    </linearGradient>
+    <linearGradient id="cheese" x1="208" y1="120" x2="288" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF4B8" />
+      <stop offset="1" stop-color="#F5C652" />
+    </linearGradient>
+    <linearGradient id="berries" x1="130" y1="220" x2="220" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9D174D" />
+      <stop offset="1" stop-color="#D61F69" />
+    </linearGradient>
+    <filter id="plateShadow" x="24" y="44" width="312" height="292" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feOffset dy="12" />
+      <feGaussianBlur stdDeviation="16" />
+      <feColorMatrix type="matrix" values="0 0 0 0 0.12 0 0 0 0 0.08 0 0 0 0 0 0 0 0 0.25 0" />
+      <feBlend in="SourceGraphic" result="shape" />
+    </filter>
   </defs>
-  <rect width="360" height="360" rx="48" fill="#1B1010" />
-  <circle cx="180" cy="160" r="140" fill="url(#gradient)" opacity="0.82" />
-  <circle cx="140" cy="150" r="24" fill="#FDECD6" />
-  <circle cx="220" cy="150" r="24" fill="#FDECD6" />
-  <path d="M120 200C132 170 170 152 204 156C238 160 270 188 276 220C280 244 262 268 236 276C200 288 150 280 128 252C108 228 108 228 120 200Z" fill="#401F14" opacity="0.8" />
-  <circle cx="140" cy="150" r="8" fill="#401F14" />
-  <circle cx="220" cy="150" r="8" fill="#401F14" />
-  <path d="M160 224C172 232 188 232 200 224" stroke="#FDECD6" stroke-width="8" stroke-linecap="round" />
+  <rect width="360" height="360" rx="48" fill="#120A07" />
+  <circle cx="180" cy="164" r="164" fill="url(#boardGlow)" opacity="0.55" />
+  <g filter="url(#plateShadow)">
+    <path d="M72 84C72 67.4315 85.4315 54 102 54H258C274.569 54 288 67.4315 288 84V276C288 292.569 274.569 306 258 306H102C85.4315 306 72 292.569 72 276V84Z" fill="url(#boardWood)" />
+    <path d="M96 96H264V264H96V96Z" fill="#2A160C" opacity="0.32" />
+    <path d="M120 120C108 132 108 156 126 170C148 188 192 174 204 152C216 130 192 102 164 108C144 112 132 108 120 120Z" fill="url(#prosciutto)" />
+    <path d="M208 138C194 152 194 182 214 196C238 212 278 198 288 176C298 150 270 118 240 124C224 128 220 128 208 138Z" fill="url(#cheese)" />
+    <path d="M134 214C118 228 120 256 142 270C172 290 214 272 226 246C238 218 208 196 178 204C160 208 150 202 134 214Z" fill="url(#berries)" />
+    <g opacity="0.9">
+      <circle cx="148" cy="152" r="10" fill="#FCE3D7" />
+      <circle cx="162" cy="144" r="8" fill="#F9C4BA" />
+      <circle cx="176" cy="160" r="12" fill="#FDE8E2" />
+      <circle cx="210" cy="188" r="10" fill="#FEF2D0" />
+      <circle cx="236" cy="166" r="9" fill="#FEF8DC" />
+      <circle cx="244" cy="188" r="12" fill="#FFE89A" />
+      <path d="M170 234C176 224 190 220 202 224C214 228 224 238 226 250C228 264 218 276 202 280C186 284 168 270 170 256C170 248 168 242 170 234Z" fill="#FDD571" />
+      <path d="M124 236C134 226 154 224 166 234C180 246 178 270 160 276C142 282 116 262 124 236Z" fill="#5FA769" />
+    </g>
+  </g>
+  <path d="M128 312H232" stroke="#FEE9D2" stroke-width="6" stroke-linecap="round" opacity="0.6" />
+  <path d="M144 324H216" stroke="#FEE9D2" stroke-width="4" stroke-linecap="round" opacity="0.4" />
 </svg>
